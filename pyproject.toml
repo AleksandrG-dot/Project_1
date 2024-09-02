@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "project-1"
+version = "0.1.0"
+description = "Приложение 1. Приложение для анализа банковских транзакций"
+authors = ["Aleksandr Goncharov <potta4edu@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
