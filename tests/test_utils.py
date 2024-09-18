@@ -148,7 +148,7 @@ def test_get_exchange_rate_non_curr(moc_get):
         "error": {
             "code": "invalid_currency_codes",
             "message": "You have provided one or more invalid Currency Codes. "
-                       "[Required format: currencies=EUR,USD,GBP,...]",
+            "[Required format: currencies=EUR,USD,GBP,...]",
         }
     }
     assert utils.get_exchange_rate(["ARB", "TSLA"]) == []

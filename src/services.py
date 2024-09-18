@@ -6,9 +6,8 @@
 # Категория такой транзакции — Переводы, а в описании есть имя и первая буква фамилии с точкой (Валерий А.).
 
 import json
-
-import re
 import logging
+import re
 
 logger = logging.getLogger(__name__)
 file_handler = logging.FileHandler(rf"..\\logs\{__name__}.log", "w")

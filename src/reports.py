@@ -6,7 +6,6 @@ import logging
 from functools import wraps
 from typing import Optional
 
-import numpy as np
 import pandas as pd
 
 # Используемые библиотеки json, pandas, logging, pytest, datetime

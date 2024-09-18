@@ -27,7 +27,7 @@ def get_user_settings() -> dict():
     try:  # Проверка что формат файла соответствует требованиям и в нем есть нужные нам ключи
         with open(path) as file:
             result = json.load(file)
-        result["user_currencies"]
+        result["user_currencies"]  # Проверка на существование ключей user_currencies и user_stocks
         result["user_stocks"]
     except Exception as e:
         logger.error(f"Функция get_user_settings: Произошла ОШИБКА: {e}", exc_info=True)

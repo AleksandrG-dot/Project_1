@@ -3,10 +3,10 @@
 # Используемые библиотеки json, requests, API, datetime, logging, pytest, pandas
 import json
 
-import utils
+import src.utils as utils
 
 
-def main(dt_as_str: str):  # -> json ????
+def main(dt_as_str: str) -> json:
     """Главная функция выводящая JSON-результ запроса по дате"""
 
     user_setting = utils.get_user_settings()
