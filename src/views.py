@@ -6,8 +6,8 @@ import json
 import src.utils as utils
 
 
-def main(dt_as_str: str) -> json:
-    """Главная функция выводящая JSON-результ запроса по дате"""
+def main(dt_as_str: str) -> json: # Формат даты: YYYY-MM-DD HH:MM:SS
+    """Главная функция выводящая JSON-результ запроса по дате. Формат даты: YYYY-MM-DD HH:MM:SS"""
 
     user_setting = utils.get_user_settings()
     data = utils.get_data_for_month_excel(dt_as_str)
